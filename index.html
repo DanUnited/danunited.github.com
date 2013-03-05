@@ -61,7 +61,6 @@
 
 				<div id="content">
 					<div id="content">
-						<script>$('#learn').click(function(){$('#content').load('/learn.html');$('.breadcrumb span').html('Учеба');}) </script>	
 					</div>
 				</div>
 				
@@ -91,6 +90,7 @@
 <script src="/js/bootstrap-typeahead.js"></script>
 <script>
 $("a.brand").append('BootTrapstyle').attr('href', 'http://danunited.github.com');
+$('#content').load('/learn.html');
 $(document).ready(function(){              
     $('#book').click(function(){$('#content').load('/books.html');$('.breadcrumb span').html('Литература');});
 	$('#learn').click(function(){$('#content').load('/learn.html');$('.breadcrumb span').html('Учеба');}) 	
