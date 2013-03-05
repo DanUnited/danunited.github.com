@@ -89,12 +89,25 @@
 <script src="/js/bootstrap-carousel.js"></script>
 <script src="/js/bootstrap-typeahead.js"></script>
 <script>
+function setUrl(varclass,varurl,varbread,varactive)
+{ 
+ $(varclass).click(
+	function(){
+		$('#content').load(varurl);
+		$('.breadcrumb span').html(varbread);
+	}
+ ); 
+ if(varactive==1){
+	$('li').removeClass("active");
+	$(varclass).addClass("active");
+	}
+}
 $("a.brand").append('BootTrapstyle').attr('href', 'http://danunited.github.com');
 $('#content').load('/learn.html');
 $(document).ready(function(){              
     $('#book').click(function(){$('#content').load('/books.html');$('.breadcrumb span').html('Литература');});
-	$('#learn,#about').click(function(){$('#content').load('/learn.html');$('.breadcrumb span').html('Учеба');}).removeClass("activeClass"); 	
-	$('#design').click(function(){$('#content').load('/design.html');$('.breadcrumb span').html('Дизайн');}) 	
-	$('li#contacts').click(function(){$('#content').load('/contacts.html');$('.breadcrumb span').html('Контакты');}) 	
+	setUrl('#learn,#about','/learn.html','Учеба',1);
+	setUrl('#design','/design.html','Дизайн',1);	
+	setUrl('li#contacts','/contacts.html','Контакты',1);		 	
 }); 
 </script>
