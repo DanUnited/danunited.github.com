@@ -105,7 +105,7 @@ function setUrl(varclass,varurl,varbread,varactive)
 $("a.brand").append('BootTrapstyle').attr('href', 'http://danunited.github.com');
 $('#content').load('/learn.html');
 $(document).ready(function(){              
-    $('#book').click(function(){$('#content').load('/books.html');$('.breadcrumb span').html('Литература');});
+	setUrl('#book','/books.html','Литература',1);
 	setUrl('#learn,#about','/learn.html','Учеба',1);
 	setUrl('#design','/design.html','Дизайн',1);	
 	setUrl('li#contacts','/contacts.html','Контакты',1);		 	
