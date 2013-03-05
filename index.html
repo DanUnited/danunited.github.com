@@ -61,8 +61,7 @@
 
 				<div id="content">
 					<div id="content">
-						<h3>Учеба</h3>
-						Учусь на 2 курсе ФАВТ "010500: Математическое обеспечение и администрирование информационных систем"
+						<script>$('#learn').click(function(){$('#content').load('/learn.html');$('.breadcrumb span').html('Учеба');}) </script>	
 					</div>
 				</div>
 				
@@ -91,7 +90,7 @@
 <script src="/js/bootstrap-carousel.js"></script>
 <script src="/js/bootstrap-typeahead.js"></script>
 <script>
-$("a.brand").append('BootTrapstyle');
+$("a.brand").append('BootTrapstyle').attr('href', 'http://danunited.github.com');
 $(document).ready(function(){              
     $('#book').click(function(){$('#content').load('/books.html');$('.breadcrumb span').html('Литература');});
 	$('#learn').click(function(){$('#content').load('/learn.html');$('.breadcrumb span').html('Учеба');}) 	
