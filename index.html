@@ -1,3 +1,105 @@
-<html>
-<b>HTML �������� 2 ���</b>
+
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="ru" />
+
+	 <meta name="description" content="">
+    <meta name="author" content="">
+
+	<!--CSS framework -->
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.css" />
+	<link rel="stylesheet" type="text/css" href="/css/template.css" />
+
+	<title>Alucard CMS - Site</title>
+</head>
+<body>
+<div class="container">
+	<div class="row-fluid">
+		<div class="navbar navbar-fixed-top"><!--верхняя навигационная панель-->
+			<div class="navbar-inner">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</a>
+
+				<a class="brand" href="#">Alucard CMS</a>
+				<div class="nav-collapse"> <!--навигационные пункты верхнего меню-->
+						<ul class="nav" id="yw0">
+<li class="active"><a href="/site/index.htm">Главная</a></li>
+<li><a href="/Register.htm">Регистрация</a></li>
+<li><a href="/site/login.htm">Login</a></li>
+</ul>				</div>
+			</div>
+		</div>
+
+		<div class="span3"><!-- Левое боковое меню -->
+			<div class="well sidebar-nav">
+				<ul class="nav nav-list">
+					<li class="nav-header">Навигация</li>
+				</ul>
+				<ul class="nav nav-list" id="yw1">
+<li class="active"><a href="/site/index.htm">Главная</a></li>
+<li><a href="/admin.htm">Админка</a></li>
+</ul>			</div>
+		</div>
+
+		<div class="span8" style="border: 20px solid #2C2C2C;
+								  margin:-9px 20px;
+								  position:relative;
+								  z-index:2;
+								  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Firefox */
+    							  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Для Safari и Chrome */
+    							  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+								  ">
+			<div class="hero-unit">
+
+				<div class="breadcrumb">
+<a href="/site/index">Главная</a> &raquo; <span>Зарегистрированные пользователи</span></div><!-- breadcrumbs -->
+
+				<div id="flash"><!--flash message-->
+								</div>
+				<div id="content">
+					<div id="content">
+			<h2>Зарегистрированные пользователи:</h2>
+<ol>
+<LI>admin  July 29, 2012 в 04:09 pm</LI><LI>DanUnited  July 29, 2012 в 05:01 pm</LI><LI>dufifa  July 29, 2012 в 05:07 pm</LI></ol>
+	</div>
+				</div>
+				
+
+			</div><!-- page -->
+
+		</div><!--  span8 основная часть -->
+		<div class="span12 well sidebar-nav" style="text-align:center;margin:30px 0;"><!--footer-->
+			<div id="footer">
+					Copyright &copy; 2013 by AlucardArts.<br/>
+					Отработало за 0.01954 с. 
+					Отжали: 7.97MB				</div><!-- footer -->
+		</div>
+
+
+	</div>
+</div>
+</body>
 </html>
+<script src="/js/jquery.js"></script>
+<!--
+<script src="/js/bootstrap-transition.js"></script>
+<script src="/js/bootstrap-alert.js"></script>
+<script src="/js/bootstrap-modal.js"></script>
+-->
+<script src="/js/bootstrap-dropdown.js"></script>
+<script src="/js/bootstrap-scrollspy.js"></script>
+<script src="/js/bootstrap-tab.js"></script>
+<script src="/js/bootstrap-tooltip.js"></script>
+<script src="/js/bootstrap-popover.js"></script>
+<script src="/js/bootstrap-button.js"></script>
+<script src="/js/bootstrap-collapse.js"></script>
+<script src="/js/bootstrap-carousel.js"></script>
+<script src="/js/bootstrap-typeahead.js"></script>
+<script>
+$("a.brand").append('<sup>alpha</sup>');
+</script>
