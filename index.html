@@ -95,12 +95,14 @@ function setUrl(varclass,varurl,varbread,varactive)
 	function(){
 		$('#content').load(varurl);
 		$('.breadcrumb span').html(varbread);
+		 if(varactive==1){
+			$('li').removeClass("active");
+			alert(varclass);
+			$(varclass).addClass("active");
+		}
 	}
  ); 
- if(varactive==1){
-	$('li').removeClass("active");
-	$(varclass).addClass("active");
-	}
+
 }
 $("a.brand").append('BootTrapstyle').attr('href', 'http://danunited.github.com');
 $('#content').load('/learn.html');
