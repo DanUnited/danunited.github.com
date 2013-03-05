@@ -25,7 +25,7 @@
 				<a class="brand" href="#"></a>
 					<div class="nav-collapse"> <!--навигационные пункты верхнего меню-->
 							<ul class="nav" id="yw0">
-							<li class="active" id="about"><a href="#">О себе</a></li>
+							<li class="active" id="about"><a href="#">Главная</a></li>
 							<li id="contacts"><a href="#">Контакты</a></li>
 							<li><a href="#"></a></li>
 							</ul>
@@ -95,5 +95,6 @@ $(document).ready(function(){
     $('#book').click(function(){$('#content').load('/books.html');$('.breadcrumb span').html('Литература');});
 	$('#learn').click(function(){$('#content').load('/learn.html');$('.breadcrumb span').html('Учеба');}) 	
 	$('#design').click(function(){$('#content').load('/design.html');$('.breadcrumb span').html('Дизайн');}) 	
+	$('li #contact').click(function(){$('#content').load('/contacts.html');$('.breadcrumb span').html('Контакты');}) 	
 }); 
 </script>
