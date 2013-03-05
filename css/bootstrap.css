@@ -3249,6 +3249,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav-list > li > a {
   padding: 3px 15px;
+  text-decoration: underline;
 }
 
 .nav-list > .active > a,
