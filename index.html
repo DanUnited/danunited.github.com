@@ -93,7 +93,7 @@ $("a.brand").append('BootTrapstyle').attr('href', 'http://danunited.github.com')
 $('#content').load('/learn.html');
 $(document).ready(function(){              
     $('#book').click(function(){$('#content').load('/books.html');$('.breadcrumb span').html('Литература');});
-	$('#learn').click(function(){$('#content').load('/learn.html');$('.breadcrumb span').html('Учеба');}) 	
+	$('#learn,#about').click(function(){$('#content').load('/learn.html');$('.breadcrumb span').html('Учеба');}) 	
 	$('#design').click(function(){$('#content').load('/design.html');$('.breadcrumb span').html('Дизайн');}) 	
 	$('li#contacts').click(function(){$('#content').load('/contacts.html');$('.breadcrumb span').html('Контакты');}) 	
 }); 
